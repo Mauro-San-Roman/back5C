@@ -23,7 +23,7 @@ export const getGrupoById=async (req,res)=>{
         res.status(500).json({error:error.message})
     }
 }
-export const insertGrupo=async (req,res)=>{
+export const createGrupo=async (req,res)=>{
     try {
 
         if(!req.body.nombre_grupo)

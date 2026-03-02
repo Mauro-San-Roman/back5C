@@ -1,7 +1,7 @@
 import db from "../config/DB.js"
 
 export const getAllGrupos= async ()=>{
-    const [rows]= await db.query("SELECT * FROM grupos WHERE activo = 1")
+    const [rows]= await db.query("SELECT * FROM grupos")
     return rows;
 }
 

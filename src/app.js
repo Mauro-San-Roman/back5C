@@ -21,7 +21,7 @@ app.use(cors())
 app.use('/api/grupos', gruposRoutes);
 
 app.get('/', (req, res)=> {
-    res.send("esto es un perimer API desde express...");
+    res.send("Esta es un primer API desde express...");
 })
 
 app.get('/otra', (req, res)=> {

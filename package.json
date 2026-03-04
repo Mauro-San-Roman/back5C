@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node run ./src/app.js",
-    "dev":"nodemon run ./src/app.js",
+    "dev": "nodemon run ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +19,6 @@
     "mysql2": "^3.17.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.13"
+    "nodemon": "^3.1.14"
   }
 }

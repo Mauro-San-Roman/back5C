@@ -16,7 +16,7 @@ export const getGrupoById=async (req,res)=>{
         
         const grupo= await grupoM.getGroupById(req.params.id)
         if (!grupo) {
-            res.status(404).json({message:"Grupo no encontrado"})
+           return res.status(404).json({message:"Grupo no encontrado"})
         }
         res.status(200).json(grupo) 
     } catch (error) {

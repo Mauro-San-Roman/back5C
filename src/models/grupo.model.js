@@ -5,7 +5,7 @@ export const getAllGrupos= async ()=>{
     return rows;
 }
 
-export const getGroupById=async ()=>{
+export const getGroupById=async (id)=>{
     const[rows]=await db.query("SELECT * FROM grupos WHERE activos=1 AND id_grupo=?",[id])
     return rows[0]
 }
